@@ -1,6 +1,14 @@
 # Example: Deterministic Observability Artifacts
 
-This example describes artifact shapes, not executable code.
+This example describes artifact shapes, not executable code. Use these shapes to record facts, not interpretations.
+
+```text
+facts in local files -> deterministic artifact -> human review
+
+No dashboard.
+No hidden scoring.
+No heuristic diagnosis.
+```
 
 ## Replay Churn Inventory
 
