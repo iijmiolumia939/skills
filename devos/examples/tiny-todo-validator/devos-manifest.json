@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "active_slice": "REQ-001",
+  "current_decision": "docs/ADR-001-todo-validation.md",
+  "requirement": "WHEN todo validation runs, THE SYSTEM SHALL reject a todo file unless it contains a tasks list where every task has a non-empty title string and a done boolean.",
+  "validation_commands": [
+    "python validate_todo.py todo.json",
+    "python validate_todo.py bad-todo.json"
+  ],
+  "observability_artifact": "docs/observability-run.json",
+  "adversary_review": "docs/adversary-review.md",
+  "unattended_iteration": "docs/unattended-iteration.md",
+  "excluded": [
+    "private project history",
+    "generated proof archives",
+    "AI scoring",
+    "heuristic diagnostics"
+  ]
+}

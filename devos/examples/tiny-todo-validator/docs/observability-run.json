@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "kind": "deterministic_observability_example",
+  "source_paths": [
+    "todo.json",
+    "bad-todo.json",
+    "validate_todo.py"
+  ],
+  "observed_commands": [
+    {
+      "command": "python validate_todo.py todo.json",
+      "expected_return_code": 0,
+      "expected_stdout": "{\"errors\": [], \"ok\": true}"
+    },
+    {
+      "command": "python validate_todo.py bad-todo.json",
+      "expected_return_code": 1,
+      "expected_stdout_contains": [
+        "tasks[0].title must be a non-empty string",
+        "tasks[1].done must be a boolean"
+      ]
+    }
+  ],
+  "replay_churn_visibility": {
+    "artifact_records": [
+      {
+        "path": "todo.json",
+        "kind": "input_fixture",
+        "state": "observed"
+      },
+      {
+        "path": "validate_todo.py",
+        "kind": "validation_lane",
+        "state": "observed"
+      }
+    ],
+    "non_claims": [
+      "no churn score",
+      "no file ranking",
+      "no optimization recommendation"
+    ]
+  },
+  "orchestration_telemetry": {
+    "command_count": 2,
+    "unavailable_channels": [
+      "token usage",
+      "wall-clock timing"
+    ]
+  },
+  "gate_instability_observability": {
+    "status": "not_measured",
+    "reason": "no gate-instability evidence contract exists in this toy example"
+  },
+  "provenance_flow_observability": {
+    "edge_semantics": "direct_artifact_production_not_transitive_flow",
+    "direct_edges": [
+      {
+        "source": "validate_todo.py",
+        "target": "docs/observability-run.json"
+      }
+    ],
+    "excluded_semantics": [
+      "no transitive closure",
+      "no reachability",
+      "no root-cause diagnosis"
+    ]
+  }
+}

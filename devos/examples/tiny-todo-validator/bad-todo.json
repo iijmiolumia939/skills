@@ -1,0 +1,11 @@
+{
+  "tasks": [
+    {
+      "title": "",
+      "done": false
+    },
+    {
+      "title": "Missing done field"
+    }
+  ]
+}

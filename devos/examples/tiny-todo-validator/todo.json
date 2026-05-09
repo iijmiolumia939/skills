@@ -1,0 +1,12 @@
+{
+  "tasks": [
+    {
+      "title": "Write the first ADR",
+      "done": true
+    },
+    {
+      "title": "Run the validator",
+      "done": false
+    }
+  ]
+}
