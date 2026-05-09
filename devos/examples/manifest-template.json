@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "YYYY-MM-DDTHH:MM:SSZ",
+  "mode": "retrieval-first",
+  "active_decisions": [
+    {
+      "id": "ADR-001",
+      "path": "docs/adr/ADR-001-example.md",
+      "why": "current feature decision"
+    }
+  ],
+  "active_requirements": [
+    {
+      "id": "REQ-001",
+      "path": "docs/requirements.md",
+      "why": "current feature requirement"
+    }
+  ],
+  "validation_lanes": [
+    {
+      "name": "default",
+      "command": "<your validation command>",
+      "failure_behavior": "fail_closed"
+    }
+  ],
+  "latest_checkpoint": "docs/checkpoints/latest.json",
+  "excluded_history": [
+    "generated proof archives",
+    "private sprint logs",
+    "domain-specific research notes"
+  ]
+}
