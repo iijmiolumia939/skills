@@ -1,22 +1,23 @@
 # DevOS Autonomous Engineering Substrate
 
-DevOS is a reusable operating model for AI-assisted software engineering. It helps teams run autonomous engineering work in small, replay-safe slices with visible decisions, explicit validation, and adversarial review.
+DevOS is a practical workflow for AI-assisted software engineering. It helps teams make small changes with visible decisions, deterministic validation, adversary review, and compact evidence.
+
+Start with [DevOS Quick Start](quick-start.md). It is the shortest path to using this package.
 
 This package is intentionally small. It contains public-safe docs, templates, prompts, and examples only. It does not contain project history, generated proof archives, domain-specific validators, or experimental prototypes.
 
 ## What This Package Provides
 
+- a five-minute [quick start](quick-start.md)
+- a tiny self-contained [example project](examples/tiny-todo-validator/README.md)
 - deterministic replay workflow patterns
-- manifest-memory and context loading patterns
+- repository-as-memory and manifest patterns
 - replay-safe validation and gate patterns
-- governance invariant patterns
 - adversary review workflow patterns
 - lightweight unattended loop patterns
-- observability and telemetry documentation
-- orchestration economics patterns
+- deterministic observability documentation
 - traceability workflow templates
 - replay-safe ADR templates and examples
-- compact context-engineering guidance
 
 ## What This Package Excludes
 
@@ -32,6 +33,8 @@ If an artifact is not clearly reusable, public-safe, and self-contained, leave i
 
 ## Structure
 
+- `quick-start.md` gives the shortest usable workflow.
+- `when-not-to-use.md` explains where DevOS is overkill.
 - `concepts/` explains the substrate in project-agnostic language.
 - `governance/` defines roles, invariants, and ADR boundaries.
 - `replay/` describes deterministic replay-safe workflows.
@@ -44,10 +47,10 @@ If an artifact is not clearly reusable, public-safe, and self-contained, leave i
 
 ## Adoption Path
 
-1. Read the extraction boundary in `governance/adr/ADR-0001-public-extraction-boundary.md`.
-2. Pick one workflow slice from `examples/replay-safe-workflow.md`.
-3. Add a small manifest and traceability scheme for your repository.
-4. Define one validation lane that can run locally and fail closed.
-5. Add adversary review before declaring the slice done.
+1. Read [DevOS Quick Start](quick-start.md).
+2. Run through the [tiny todo validator example](examples/tiny-todo-validator/README.md).
+3. Copy the smallest useful pieces into your repository: one ADR, one requirement, one validation command, one review step.
+4. Add observability only as deterministic facts, not scores or diagnoses.
+5. Check [When Not To Use DevOS](when-not-to-use.md) before adding more process.
 
 DevOS should make engineering work easier to audit, not harder to understand.

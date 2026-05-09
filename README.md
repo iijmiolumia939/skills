@@ -1,9 +1,9 @@
 # Skills
 
-Reusable public-safe skills and workflow substrates for AI-assisted software engineering.
+Reusable public-safe workflow packages for AI-assisted software engineering.
 
-## Packages
+## Start Here
 
-- [DevOS autonomous engineering substrate](devos/README.md): replay-safe governance, observability, traceability, and unattended workflow patterns for general software projects.
+- [DevOS autonomous engineering substrate](devos/README.md): a practical, replay-safe way to let AI agents work in small auditable engineering slices.
 
-This repository favors small, understandable packages over full repository exports. Public packages should contain templates, examples, and generic documentation rather than private project history or generated proof artifacts.
+This repository favors small, understandable packages over full repository exports. Public packages contain templates, examples, and generic documentation, not private project history or generated proof artifacts.
