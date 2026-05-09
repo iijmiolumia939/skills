@@ -1,10 +1,10 @@
 # Compact Context Engineering
 
-Context engineering is the practice of deciding what an agent should load, remember, summarize, and ignore while doing engineering work.
+Context engineering is deciding what an agent should load, remember, summarize, and ignore while doing engineering work.
 
 ## Manifest-Memory Pattern
 
-Use a manifest as a compact index of authoritative files. The manifest should tell an agent where to find current requirements, active decisions, validation commands, and examples. It should not replay history.
+Use a manifest as a compact index of authoritative files. The manifest tells an agent where to find current requirements, active decisions, validation commands, and examples. It should not replay history.
 
 A useful manifest answers:
 

@@ -1,14 +1,14 @@
 # Autonomous Engineering Substrate
 
-An autonomous engineering substrate is a small operating model for letting AI agents do useful engineering work while preserving human-auditable evidence.
+An autonomous engineering substrate is a small set of repository habits for AI-assisted software work. It helps an agent make progress while leaving decisions, checks, and evidence that a human can review later.
 
-It has five parts:
+DevOS starts with five parts:
 
 1. A decision protocol for non-trivial choices.
 2. A traceability scheme for requirements, tests, implementation, and evidence.
 3. A replay-safe validation lane that fails closed.
 4. A manifest-memory pattern for compact context loading.
-5. An adversary review step before work is declared complete.
+5. An adversary review step before work is called complete.
 
 ## Design Principles
 
@@ -21,4 +21,4 @@ It has five parts:
 
 ## Non-Goals
 
-DevOS is not a dashboard, project management system, model benchmark, or replacement for engineering judgment. It is a substrate for making autonomous work inspectable, repeatable, and reviewable.
+DevOS is not a dashboard, project management system, model benchmark, or replacement for engineering judgment. It is a practical way to make AI-assisted work inspectable, repeatable, and reviewable.
